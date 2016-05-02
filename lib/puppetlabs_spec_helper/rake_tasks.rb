@@ -14,7 +14,7 @@ task :default => [:help]
 
 desc "Run spec tests on an existing fixtures directory"
 RSpec::Core::RakeTask.new(:spec_standalone) do |t|
-  t.rspec_opts = ['--color']
+  t.rspec_opts = [' ']
 
   pattern = 'spec/{classes,defines,unit,functions,hosts,integration,types}/**/*_spec.rb'
   if ENV['CI_NODE_TOTAL'] && ENV['CI_NODE_INDEX']
