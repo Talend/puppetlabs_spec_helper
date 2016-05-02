@@ -32,7 +32,7 @@ end
 
 desc "Run beaker acceptance tests"
 RSpec::Core::RakeTask.new(:beaker) do |t|
-  t.rspec_opts = ['--color']
+  t.rspec_opts = [' ']
   t.pattern = 'spec/acceptance'
 end
 
